@@ -1,0 +1,96 @@
+/*start varibles*/
+:root {
+    --first-color:hsl(31, 77%, 52%);
+    --second-color:hsl(184, 100%, 22%);
+    --third-color: hsl(179, 100%, 13%);
+    --parg-color: hsla(0, 0%, 100%, 0.75);
+    --font-family: [Lexend Deca](https://fonts.google.com/specimen/Lexend+Deca);
+
+}
+
+/*end varibles*/
+/*start globle rules*/
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    
+}
+
+ul {
+    list-style: none;
+
+}
+a{
+    text-decoration: none;
+
+
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*small*/
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/*medium*/
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/*large*/
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+/*end  globle rules*/
+ .container {margin-top: 10%;}
+ .container .text h2{font-size: 28px; color: white; margin-top: 25px;}
+  .container .text p{font-size: 15px; color:var(--parg-color); margin-top: 25px;}
+  .container button{ margin-top: 40px;
+  padding: 15px 30px;
+  border-radius: 30px;
+  border: none;}
+.container #one{
+   padding: 45px;}
+.container .sedans {
+    background-color: var(--first-color);
+}
+.container .sedans button{color: var(--first-color);}
+ .container .suvs{
+    background-color: var(--second-color);
+    }
+    .container .suvs button{color: var(--second-color);}
+     .container .Luxury{
+    background-color: var(--third-color);
+}
+.container .Luxury button{color: var(--third-color);}
+/*small*/
+@media (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+  } 
+}
